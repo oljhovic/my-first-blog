@@ -1,18 +1,33 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
  <head>
   <meta charset="utf-8" />
   <title>jg</title>
- 
+ <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="{% static 'css/my_first_blog.css' %}">
  </head>
  <body>
-  <div class=""><a href="">DJANGO GIRLS!</a></div>
+ <nav>
+   <div class="menu">
+       <h1 id="blog_header"><a href="#">Название блога</a></h1> 
+   </div>
+ </nav>
+      <main>
+{% for post in posts %}
+       <div class="content_box">
+        <div class="header">
+          <h1><a href="#"> {{ post.title }} </a></h1>
+         <p id="date">опубликовано {{ post.published_date }}</p>
+        </div>
 
-  <div class="">
-    <p>published</p>
-    <h1>header</h1>
-    <p>some text</p>
-  </div>
+        <div class="text_box">
+          <p> {{ post.text|linebreaksbr }} </p>
+        </div>
+      </div>
+{% endfor %}
+      </main>
   
  </body>
 </html>
