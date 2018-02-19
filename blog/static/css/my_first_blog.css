@@ -44,7 +44,13 @@ main {
 
 .header h1 {
     padding-top: 30px;
+    
 }
+
+.header #post_details_h1 {
+    margin: 0 55px;
+    font-family: 'Merriweather', serif;
+} 
 
 .header a {
     text-decoration: none;
