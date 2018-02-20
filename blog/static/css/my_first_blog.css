@@ -9,7 +9,7 @@ nav {
 }
 
 .menu {
-    width: 750px;
+    width: 780px;
     height: 55px;
     margin: 50px auto;
 }
@@ -47,22 +47,22 @@ main {
     
 }
 
-.header #post_details_h1 {
-    margin: 0 55px;
-    font-family: 'Merriweather', serif;
-} 
-
 .header a {
     text-decoration: none;
     font-family: 'Merriweather', serif;
     margin: 0 55px;
     color: black;
     font-size: 22pt;
+    transition: 1s color;
+}
+
+.header a:hover {
+    color: goldenrod;
 }
 
 #date {
     font-family: 'Merriweather', serif;
-    margin: -10px 55px;
+    margin: -12px 55px;
     color: black;
     font-size: 11pt;
 }

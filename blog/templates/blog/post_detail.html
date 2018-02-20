@@ -3,7 +3,7 @@
 {% block content %}
     <div class="content_box">
           <div class="header">
-            <h1 id="post_details_h1"> {{ post.title }} </h1>
+            <h1> <a href="{% url 'post_detail' pk=post.pk %}"> {{ post.title }} </a> </h1>
             {% if post.published_date %}
            		<p id="date">опубликовано {{ post.published_date }}</p>
             {% endif %}
