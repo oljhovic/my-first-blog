@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:700|Montserrat|Roboto:300');
+
+body {
+    background-color: whitesmoke;
+    width: auto;
+    height: 1350px;
+    margin: 0px 0px;
+}
+
+.flex_container {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 100%;
+}
+
+nav {
+    background-color: white;
+    height: 100%;
+    width: 355px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    
+}
+
+.navigation {
+    padding-top: 90px;
+}
+
+.menu {
+    padding-top: 160px;
+    list-style-type: none; 
+}
+
+#logo {
+    text-decoration: none;
+    color: darkgray;
+    font-size: 38px;
+    padding-left: 55px;
+    padding-right: 55px;
+    color: black;
+    font-family: 'Lora', serif;
+}
+
+.menu li {
+    margin-top: 19px;
+    margin-left: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    transition: color 800ms;
+}
+
+#active_link {
+    color: goldenrod;
+}
+
+.menu a:hover {
+    color: goldenrod;
+}
+
+input {
+    margin-left: 65px;
+    color: darkgray;
+    height: 23px;
+    border: 1px solid black;
+}
+
+.social {
+    text-align: center;
+    padding-top: 65%;
+    margin-left: -105px;
+}
+
+.social img {
+    padding-left: 2.5%;
+}
+
+main {
+    background-color: #F5F5F5;
+    height: 100%;
+    flex: 1 0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main #blog_header {
+    padding-top: 55px;
+    padding-left: 10%;
+    font-size: 38px;
+    font-family: 'Lora', serif;
+}
+
+.content_box {
+    background-color: white;
+    width: 85%;
+    margin-left: 7%;
+    border: 1px solid lightgrey;
+    margin-bottom: 15px;
+    max-width: 900px;
+    min-width: 490px;
+}
+
+.header {
+    margin: 2.5% 3.5%;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lora', serif;
+    font-size: 26px;
+    transition: color 800ms;
+}
+
+.header a:hover {
+    color: goldenrod;
+}
+
+#date {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin-top: -25px;
+}
+
+.text_box {
+    font-family: 'Roboto', sans-serif;
+    margin: 2.5% 3.5%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

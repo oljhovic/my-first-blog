@@ -1,23 +1,54 @@
 {% load staticfiles %}
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8" />
-  <title>jg</title>
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="{% static 'css/my_first_blog.css' %}">
- </head>
- <body>
- <nav>
-   <div class="menu">
-       <h1 id="blog_header"><a href="#">Кулинарный блог битарда сыча</a></h1> 
-   </div>
- </nav>
-      <main>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/site_num_one.css' %}">
+     
+</head>
+<body>
+  <div class="flex_container">
+    <nav>
+       <div class="navigation">
+            <a id="logo" href="{% url 'index' %}">Logo&name</a>
+            <ul class="menu">
+                <li> <a href="#">Об авторе</a> </li>
+                <li> <a href="#">Портфолио</a></li>
+                <li> <a href="{% url 'post_list' %}">Блог</a></li>
+                <li> <a href="#">Контакты</a></li>
+            </ul>
+        
+        <form>
+            <input type="text" value="поиск...">
+        </form>
+       
+        <div class="social">
+            <a href="https://vk.com/oljhovic" target="blank"><img src="{% static 'my_site/if_vkontakte_279378.png' %}"></a>
+            
+            <a href="https://plus.google.com/u/0/107331967706382427327" target="blank"><img src="{% static 'my_site/if_google_plus_279406.png' %}"></a>
+            
+            <a href="#" target="blank"><img src="{% static 'my_site/if_facebook_fb_social_social_media_279409.png' %}"></a>
+        </div>
+       </div>
+       
+    </nav>
+    
+    <main>
         {% block content %}
         {% endblock %}
-      </main>
-  
- </body>
+    </main>
+</div>
+
+
+</body>
 </html>
+
+
+
+
+
+</body>
+</html>
+
+
