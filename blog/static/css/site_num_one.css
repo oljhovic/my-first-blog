@@ -3,7 +3,7 @@
 body {
     background-color: whitesmoke;
     width: auto;
-    height: 1350px;
+    height: auto;
     margin: 0px 0px;
 }
 
@@ -16,15 +16,17 @@ body {
 
 nav {
     background-color: white;
-    height: 100%;
+    height: 105%
     width: 355px;
     flex-grow: 0;
     flex-shrink: 0;
-    
+    position: fixed;
+    left: 0;
 }
 
 .navigation {
     padding-top: 90px;
+    width: 375px;
 }
 
 .menu {
@@ -74,7 +76,8 @@ input {
 
 .social {
     text-align: center;
-    padding-top: 65%;
+    padding-top: 70%;
+    padding-bottom: 30%;
     margin-left: -105px;
 }
 
@@ -89,7 +92,7 @@ main {
     color: black;
     display: flex;
     flex-direction: column;
-    
+    padding-left: 355px;
 }
 
 main #blog_header {
