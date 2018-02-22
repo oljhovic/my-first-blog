@@ -15,26 +15,9 @@ def post_detail(request, pk):
 
 
 def index(request):
-	return render(request, 'blog/base.html')
+	return render(request, 'blog/base.html', {})
 
 
-
-
-
-
-def current_datetime(request):
-	now = datetime.datetime.now()
-	html = '<html><body> today is %s. </body></html>' % now
-	return HttpResponse(html)
-
-def hours_ahead(request, offset):
-	try:
-		offset = int(offset)
-	except ValueError:
-		raise Http404()
-	dt = datetime.datetime.now() + datetime.timedelta(hours=offset)
-	html = '<html><body> cherez %s chasov budet %s. </body></html>' % (offset, dt)
-	return HttpResponse(html)
 
 
 
