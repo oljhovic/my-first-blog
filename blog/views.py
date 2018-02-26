@@ -17,6 +17,15 @@ def post_detail(request, pk):
 def index(request):
 	return render(request, 'blog/base.html', {})
 
+def about_me(request):
+	return render(request, 'blog/about_me.html', {})
+
+def portfolio(request):
+	return render(request, 'blog/portfolio.html', {})
+
+def contacts(request):
+	return render(request, 'blog/contacts.html', {})
+
 
 
 

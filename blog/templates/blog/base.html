@@ -8,20 +8,24 @@
      
 </head>
 <body>
-  <div class="flex_container">
-    <nav>
+  
+    <nav id="slide_menu">
+      <img id="close_menu" width="31" src="{% static 'my_site/close_menu.png' %}">
+      <img id="open_menu" width="38" src="{% static 'my_site/open_menu.png' %}">
        <div class="navigation">
-            <a id="logo" href="{% url 'index' %}">Logo&name</a>
+          <a id="logo" href="{% url 'index' %}">Logo&name</a>
+            <div class="portrait_circle">
+              <a href="{% url 'index' %}" ><img width="120" src="{% static 'my_site/unicorn.png' %}"></a>
+            </div>
+        </div>
+            
+            
             <ul class="menu">
-                <li> <a href="#">Об авторе</a> </li>
-                <li> <a href="#">Портфолио</a></li>
+                <li> <a href="{% url 'about_me' %}">Об авторе</a> </li>
+                <li> <a href="{% url 'portfolio' %}">Портфолио</a></li>
                 <li> <a href="{% url 'post_list' %}">Блог</a></li>
-                <li> <a href="#">Контакты</a></li>
+                <li> <a href="{% url 'contacts' %}">Контакты</a></li>
             </ul>
-        
-        <form>
-            <input type="text" value="поиск...">
-        </form>
        
         <div class="social">
             <a href="https://vk.com/oljhovic" target="blank"><img src="{% static 'my_site/if_vkontakte_279378.png' %}"></a>
@@ -30,7 +34,6 @@
             
             <a href="#" target="blank"><img src="{% static 'my_site/if_facebook_fb_social_social_media_279409.png' %}"></a>
         </div>
-       </div>
        
     </nav>
     
@@ -40,6 +43,7 @@
     </main>
 </div>
 
+<script src="{% static 'my_site/menu.js' %}"></script>
 
 </body>
 </html>
